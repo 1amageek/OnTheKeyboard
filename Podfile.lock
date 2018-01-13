@@ -1,0 +1,12 @@
+PODS:
+  - Toolbar (0.0.6)
+
+DEPENDENCIES:
+  - Toolbar
+
+SPEC CHECKSUMS:
+  Toolbar: 30a12aa3679d1f6b2bd3054c40ae0a93ef80cbe4
+
+PODFILE CHECKSUM: eb5339c44b526d343e82ee218ff9b6f992d33e33
+
+COCOAPODS: 1.4.0.beta.2
