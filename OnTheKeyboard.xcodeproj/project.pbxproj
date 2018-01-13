@@ -15,6 +15,7 @@
 		12774453200A0C52007D8ACD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12774452200A0C52007D8ACD /* Assets.xcassets */; };
 		12774456200A0C52007D8ACD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12774454200A0C52007D8ACD /* LaunchScreen.storyboard */; };
 		12AA2126200A128300D56F81 /* OnTheKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12774443200A0C1B007D8ACD /* OnTheKeyboard.swift */; };
+		12AA2128200A634F00D56F81 /* OnTheKeyboard.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 12AA2127200A634F00D56F81 /* OnTheKeyboard.podspec */; };
 		D4FBBF905C5AACF0F65D283E /* Pods_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D26250200B52886AB87F80A2 /* Pods_Sample.framework */; };
 		FFC8244C9E684CA3956D4D92 /* Pods_OnTheKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FD6F7F0D87F99AD99D7D92 /* Pods_OnTheKeyboard.framework */; };
 /* End PBXBuildFile section */
@@ -31,6 +32,7 @@
 		12774452200A0C52007D8ACD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12774455200A0C52007D8ACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12774457200A0C52007D8ACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12AA2127200A634F00D56F81 /* OnTheKeyboard.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OnTheKeyboard.podspec; sourceTree = "<group>"; };
 		455499C7266659BFF9646BDE /* Pods-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sample/Pods-Sample.release.xcconfig"; sourceTree = "<group>"; };
 		8B676238ED4A839CD55F47F9 /* Pods-OnTheKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnTheKeyboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-OnTheKeyboard/Pods-OnTheKeyboard.release.xcconfig"; sourceTree = "<group>"; };
 		AA5E945603DDB91B811D62E2 /* Pods-OnTheKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnTheKeyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OnTheKeyboard/Pods-OnTheKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 		1277442E200A0C06007D8ACD = {
 			isa = PBXGroup;
 			children = (
+				12AA2127200A634F00D56F81 /* OnTheKeyboard.podspec */,
 				1277443A200A0C06007D8ACD /* OnTheKeyboard */,
 				1277444A200A0C52007D8ACD /* Sample */,
 				12774439200A0C06007D8ACD /* Products */,
@@ -221,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12AA2128200A634F00D56F81 /* OnTheKeyboard.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
