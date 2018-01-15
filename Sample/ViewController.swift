@@ -9,7 +9,7 @@
 import UIKit
 import Toolbar
 
-class ViewController: UIViewController , OnTheKeyboard {
+class ViewController: UIViewController, OnTheKeyboard {
 
     var keyboardObservers: [Any] = []
 

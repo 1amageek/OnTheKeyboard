@@ -52,6 +52,10 @@ public protocol OnTheKeyboard: KeyboardObservable {
     var toolBar: Toolbar { get }
 
     var toolbarBottomConstraint: NSLayoutConstraint? { get set }
+
+    func keyboardWillLayout()
+
+    func keyboardDidLayout()
 }
 
 public extension OnTheKeyboard where Self: UIViewController {
@@ -78,19 +82,29 @@ public extension OnTheKeyboard where Self: UIViewController {
 
     }
 
+    public func keyboardWillLayout() {
+
+    }
+
+    public func keyboardDidLayout() {
+
+    }
+
     public func moveToolbar(up: Bool, notification: Notification) {
         guard let userInfo = notification.userInfo else {
             return
         }
+        self.view.layoutIfNeeded()
         let animationDuration: TimeInterval = (userInfo[UIKeyboardAnimationDurationUserInfoKey] as! NSNumber).doubleValue
         //let animationCurve: UIViewAnimationCurve = UIViewAnimationCurve(rawValue: (userInfo[UIKeyboardAnimationCurveUserInfoKey] as! NSNumber).intValue)!
         let keyboardHeight = up ? (userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue.height : 0
         self.toolbarBottomConstraint?.constant = keyboardHeight
-
-        // Animation
-        self.view.layoutIfNeeded()
+        self.keyboardWillLayout()
         UIView.animate(withDuration: animationDuration, delay: 0, options: UIViewAnimationOptions.curveEaseInOut, animations: {
             self.view.layoutIfNeeded()
-        }, completion: nil)
+        }, completion: { _ in
+            self.keyboardDidLayout()
+        })
     }
 }
+
