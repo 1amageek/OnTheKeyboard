@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "OnTheKeyboard"
-  s.version      = "0.0.2"
+  s.version      = "0.0.2t"
   s.summary      = "Toolbar on the keyboard"
   s.description  = <<-DESC
 OnTheKeyboard provides a toolbar located above the keyboard.
